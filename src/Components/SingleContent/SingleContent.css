@@ -1,0 +1,147 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  padding: 5px;
+  margin: 7px 3px;
+  background-color: #d5c3aa;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  height: 400px;
+}
+
+.media:hover {
+  background-color: #f2aa4cff;
+  color: black;
+}
+
+.poster {
+  border-radius: 10px;
+}
+
+.singleContent__img {
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .media {
+    width: 220px;
+    /* height: 400px; */
+  }
+  .poster {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+@media (max-width: 490px) {
+  .media {
+    width: 250px;
+  }
+  .poster {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 8px 0;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  padding: 0 2px;
+  padding-bottom: 3px;
+}
+
+
+.card{
+  width: 250px;
+  height: 400px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #DDD;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #33435A;
+  position: relative;
+  margin:20px,
+}
+.img{
+  width: 100%;
+  height: 160px;
+  padding: 10px;
+}
+.img img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain
+}
+h2{
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.price{
+  font-weight: bold;
+  font-size: 18px;
+  color: #E72F3A;
+  margin-bottom: 10px;
+}
+.tag,
+.rate{
+  position: absolute;
+  color: #FFF;
+  padding: 3px 10px 6px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.tag{
+    background-color: #E72F3A;
+   top: 10px;
+  left: 0;
+}
+.rate{
+  background-color: #33435A;
+   top: 10px;
+  right: 0;
+}
+.desc{
+  font-size: 14px;
+  text-align: justify;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+.btn{
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 2px auto;
+  width: 50%;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 5px;
+  transition: backgound 0.5s linear;
+}
+.btn:hover{
+  background: #455a77;
+}
